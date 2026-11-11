@@ -28,3 +28,15 @@
   ClapTrap::~ClapTrap() {
     std::cout << _name << " is destroyed!" << std::endl;
   }
+
+  void ClapTrap::attack(const std::string &target) {
+    if(_energyPoints < 1)
+      std::cout << _name << " has no energy to do so!";
+    else if(_hitPoints < 1)
+      std::cout << _name << " is dead!";
+    else {
+      _energyPoints--;
+      std::cout << _name << " deals " << _attackDamage << " points of damage to " << target << "!" << std::endl;
+      std::cout << "It has left " << _energyPoints << " energy points." << std::endl;
+    }
+  }
