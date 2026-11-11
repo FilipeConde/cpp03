@@ -16,7 +16,7 @@
 
   ClapTrap &ClapTrap::operator=(const ClapTrap &other) {
     if(this != &other) {
-      this->_name = other._name;
+      this->_name += " <- " + other._name;
       this->_hitPoints = other._hitPoints;
       this->_energyPoints = other._energyPoints;
       this->_attackDamage = other._attackDamage;
