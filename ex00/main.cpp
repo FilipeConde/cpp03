@@ -3,5 +3,6 @@
 
 int main(){
 
+  ClapTrap a("test");
   return (0);
 }
