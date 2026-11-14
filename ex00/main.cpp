@@ -9,5 +9,9 @@ int main(){
   ClapTrap c("dummy");
   c = a;
   c.attack("Second guy");
+  c.takeDamage(3);
+  c.takeDamage(3);
+  c.takeDamage(3);
+  c.takeDamage(3);
   return (0);
 }

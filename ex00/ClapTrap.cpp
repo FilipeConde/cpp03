@@ -40,3 +40,11 @@
       std::cout << "It has left " << _energyPoints << " energy points." << std::endl;
     }
   }
+
+  void ClapTrap::takeDamage(unsigned int amount) {
+    _hitPoints -= amount;
+    std::cout << _name << " was inflicted " << amount << " points of damage!" << std::endl;
+    std::cout << _name << " has " << _hitPoints << " hitpoints." << std::endl;
+    if(_hitPoints < 1)
+      std::cout << _name << " is dead!" << std::endl;
+  }
