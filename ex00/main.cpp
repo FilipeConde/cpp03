@@ -9,9 +9,15 @@ int main(){
   ClapTrap c("dummy");
   c = a;
   c.attack("Second guy");
+  std::cout << std::endl;
   c.takeDamage(3);
+  std::cout << std::endl;
   c.takeDamage(3);
+  std::cout << std::endl;
   c.takeDamage(3);
+  std::cout << std::endl;
+  c.beRepaired(4);
+  std::cout << std::endl;
   c.takeDamage(3);
   return (0);
 }
