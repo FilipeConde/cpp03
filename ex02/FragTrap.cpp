@@ -32,3 +32,7 @@ void FragTrap::attack(const std::string &target) {
       std::cout << "It has left " << _energyPoints << " energy points." << std::endl;
     }
 }
+
+void highFivesGuys(void) {
+  std::cout << "Gimme a hi-five, guys!" << std::endl;
+}
