@@ -1,6 +1,7 @@
 #include <iostream>
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main(){
 
@@ -21,6 +22,6 @@ int main(){
   // std::cout << std::endl;
   // c.takeDamage(3);
 
-  ScavTrap d("SCAV");
+  FragTrap d("FRAG");
   return (0);
 }
